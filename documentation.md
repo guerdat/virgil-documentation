@@ -112,6 +112,9 @@
 | TPS | DOUBLE | | Engine's current throttle position as a percentage |
 | AFR | DOUBLE | | Current Air Fuel Ratio reading from oxygen sensor |
 | Barometer | DOUBLE | | Current barometric pressure reading |
+| TPSdot | DOUBLE | | Rate of change of TPS (the increase in throttle position per second) |
+| MAPdot | DOUBLE | | Rate of change of MAP (the increase in manifold pressure per second) |
+| RPMdot | DOUBLE | | Rate of change of RPM (the increase in engine revolutions per minute per second) |
 
 # Canonical Queries
 
