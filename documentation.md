@@ -425,6 +425,9 @@ When querying the customer_recurring_revenue table on a monthly basis, use the f
 ## SQOs
 A deal is considered a "Sales Qualified Opportunity" (SQO) if it has entered the deal_stage with value '145109412'.
 
+## SQL Dialect Notes
+DuckDB does not support using the window function row_number() in the WHERE clause. When writing queries for DuckDB, avoid filtering directly on window functions in the WHERE clause and instead use subqueries or CTEs to materialize the window function results first.
+
 # Facts
 
 ## SDR Information
