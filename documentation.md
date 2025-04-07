@@ -122,6 +122,13 @@
 | Fuel: Total cor | DOUBLE | | Total fuel percentage multiplier obtained by multiplying other factors (values outside 80%-120% range may indicate issues) |
 | Load | DOUBLE | | Primary load for fuel calculations (should match 'AFR load' value) |
 
+## lambda_delay
+| Column Name | Type | Joins To | Notes |
+|-------------|------|----------|-------|
+| load | UNKNOWN | | | 
+| rpm | UNKNOWN | | | 
+| delay_ms | UNKNOWN | | Time delay in milliseconds from when the engine fires until the exhaust gasses reach the O2 sensor to measure the air fuel ratio |
+
 # Canonical Queries
 
 ## Net returns by SDR and Month
@@ -524,6 +531,8 @@ The vehicle uses a 5 speed manual transmission that drives the rear wheels throu
 The vehicle is equipped with 185/60 R 14 tires.
 
 The stoic target for this engine is 14.7, which represents the ideal air-fuel ratio for optimal combustion efficiency.
+
+The lambda_delay table captures the time delay from when the engine fires until the exhaust gasses reach the O2 sensor to measure the air fuel ratio.
 
 ## Database Changes
 All six Hubspot-related tables (hubspot.deal, hubspot.deal_stage, hubspot.owner, hubspot.users, hubspot.deal_company, hubspot.company) have been dropped from the database.
