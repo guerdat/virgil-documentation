@@ -98,6 +98,12 @@
 | property_company_score_clay_ | NUMERIC | |
 | property_crm_clay_ | TEXT | |
 
+## engine_log
+| Column Name | Type | Joins To | Notes |
+|-------------|------|----------|-------|
+| RPM | NUMERIC | | Engine revolutions per minute for vehicle performance tracking |
+| MPH | NUMERIC | | Miles per hour for vehicle performance tracking |
+
 # Canonical Queries
 
 ## Net returns by SDR and Month
@@ -479,3 +485,7 @@ members:
     role: SDR
     start_date: 2025-03-01
     stop_date: null
+```
+
+## Vehicle Performance Tracking
+The engine_log table contains RPM (engine revolutions per minute) and MPH (miles per hour) columns for vehicle performance tracking.
