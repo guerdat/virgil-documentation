@@ -501,3 +501,6 @@ The engine_log table contains multiple log files. The 'time' column represents e
 Data in the engine_log table is generated from a four cylinder, four stroke gasoline 1608cc engine. This engine has fuel injectors that flow approximately 17.1 lb/hr. The computer producing the logs is a microsquirt ECU.
 
 The vehicle uses a 5 speed manual transmission that drives the rear wheels through a 3.91:1 ratio differential.
+
+## Database Changes
+All six Hubspot-related tables (hubspot.deal, hubspot.deal_stage, hubspot.owner, hubspot.users, hubspot.deal_company, hubspot.company) have been dropped from the database.
