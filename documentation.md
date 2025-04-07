@@ -515,5 +515,9 @@ The vehicle is equipped with 185/60 R 14 tires.
 
 The stoic target for this engine is 14.7, which represents the ideal air-fuel ratio for optimal combustion efficiency.
 
+The ECU has two lookup tables it uses to estimate the amount of fuel it should add to the engine:
+1. The AFR table is 12x12 and contains the target Air Fuel Ratio with Engine Load on the Y axis and RPM on the X axis.
+2. The VE table is 16x16 and contains the estimated engine Volumetric Efficiency, with Fuel Load on the Y axis and RPM on the X axis.
+
 ## Database Changes
 All six Hubspot-related tables (hubspot.deal, hubspot.deal_stage, hubspot.owner, hubspot.users, hubspot.deal_company, hubspot.company) have been dropped from the database.
