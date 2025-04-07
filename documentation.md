@@ -497,3 +497,5 @@ The table tracks detailed engine metrics including RPM, MAP, Boost PSI, TPS, AFR
 For location tracking, the table captures GPS and location data including latitude, longitude, heading, and accuracy. Performance metrics include Zero to 60 Time, Power, Torque, and various force measurements.
 
 The engine_log table contains multiple log files. The 'time' column represents elapsed time in seconds since the beginning of the log and is not guaranteed to be unique. The 'file_date' column stores the date and time of the log file in 'YYYY-MM-DD_HH.MM.SS' format.
+
+Data in the engine_log table is generated from a four cylinder, four stroke gasoline 1608cc engine. This engine has fuel injectors that flow approximately 17.1 lb/hr. The computer producing the logs is a microsquirt ECU.
