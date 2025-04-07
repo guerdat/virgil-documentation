@@ -507,5 +507,7 @@ The vehicle uses a 5 speed manual transmission that drives the rear wheels throu
 
 The vehicle is equipped with 185/60 R 14 tires.
 
+The stoic target for this engine is 14.7, which represents the ideal air-fuel ratio for optimal combustion efficiency.
+
 ## Database Changes
 All six Hubspot-related tables (hubspot.deal, hubspot.deal_stage, hubspot.owner, hubspot.users, hubspot.deal_company, hubspot.company) have been dropped from the database.
