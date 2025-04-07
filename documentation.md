@@ -103,6 +103,8 @@
 |-------------|------|----------|-------|
 | RPM | NUMERIC | | Engine revolutions per minute for vehicle performance tracking |
 | MPH | NUMERIC | | Miles per hour for vehicle performance tracking |
+| time | NUMERIC | | Elapsed time in seconds since the beginning of the log, not guaranteed to be unique |
+| file_date | VARCHAR | | The date and time of the log file in 'YYYY-MM-DD_HH.MM.SS' format |
 
 # Canonical Queries
 
@@ -493,3 +495,5 @@ The engine_log table contains 105 columns covering engine performance, GPS, and 
 The table tracks detailed engine metrics including RPM, MAP, Boost PSI, TPS, AFR, and various fuel corrections. It also includes spark-related columns tracking spark advance, retard, and correction factors.
 
 For location tracking, the table captures GPS and location data including latitude, longitude, heading, and accuracy. Performance metrics include Zero to 60 Time, Power, Torque, and various force measurements.
+
+The engine_log table contains multiple log files. The 'time' column represents elapsed time in seconds since the beginning of the log and is not guaranteed to be unique. The 'file_date' column stores the date and time of the log file in 'YYYY-MM-DD_HH.MM.SS' format.
