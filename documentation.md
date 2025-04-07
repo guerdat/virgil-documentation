@@ -488,4 +488,8 @@ members:
 ```
 
 ## Vehicle Performance Tracking
-The engine_log table contains RPM (engine revolutions per minute) and MPH (miles per hour) columns for vehicle performance tracking.
+The engine_log table contains 105 columns covering engine performance, GPS, and vehicle dynamics data. Most columns are of DOUBLE type, with file_date being the only VARCHAR column.
+
+The table tracks detailed engine metrics including RPM, MAP, Boost PSI, TPS, AFR, and various fuel corrections. It also includes spark-related columns tracking spark advance, retard, and correction factors.
+
+For location tracking, the table captures GPS and location data including latitude, longitude, heading, and accuracy. Performance metrics include Zero to 60 Time, Power, Torque, and various force measurements.
