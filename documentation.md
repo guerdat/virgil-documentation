@@ -115,6 +115,12 @@
 | TPSdot | DOUBLE | | Rate of change of TPS (the increase in throttle position per second) |
 | MAPdot | DOUBLE | | Rate of change of MAP (the increase in manifold pressure per second) |
 | RPMdot | DOUBLE | | Rate of change of RPM (the increase in engine revolutions per minute per second) |
+| PW | DOUBLE | | Fuel pulsewidth for injector channel 1 (the actual electrical pulsewidth including deadtime) |
+| VE1 | DOUBLE | | Value looked up in the VE table |
+| Accel PW | DOUBLE | | Current fuel pulsewidth adder due to acceleration enrichment |
+| AFR load | DOUBLE | | Engine load value used on the Y-axis of the AFR table |
+| Fuel: Total cor | DOUBLE | | Total fuel percentage multiplier obtained by multiplying other factors (values outside 80%-120% range may indicate issues) |
+| Load | DOUBLE | | Primary load for fuel calculations (should match 'AFR load' value) |
 
 # Canonical Queries
 
