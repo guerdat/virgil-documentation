@@ -105,6 +105,12 @@
 | MPH | NUMERIC | | Miles per hour for vehicle performance tracking |
 | time | NUMERIC | | Elapsed time in seconds since the beginning of the log, not guaranteed to be unique |
 | file_date | VARCHAR | | The date and time of the log file in 'YYYY-MM-DD_HH.MM.SS' format |
+| MAT | DOUBLE | | Manifold Air Temperature reading |
+| CLT | DOUBLE | | Current engine coolant temperature |
+| MAP | DOUBLE | | Current Intake Manifold Pressure |
+| Batt V | DOUBLE | | Current battery voltage |
+| TPS | DOUBLE | | Engine's current throttle position as a percentage |
+| AFR | DOUBLE | | Current Air Fuel Ratio reading from oxygen sensor |
 
 # Canonical Queries
 
