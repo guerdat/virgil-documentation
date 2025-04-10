@@ -58,3 +58,8 @@ The vehicle is equipped with 185/60 R 14 tires.
 The stoic target for this engine is 14.7, which represents the ideal air-fuel ratio for optimal combustion efficiency.
 
 The lambda_delay table captures the time delay from when the engine fires until the exhaust gasses reach the O2 sensor to measure the air fuel ratio.
+
+## Engine Operating Conditions
+The engine is considered at operating temperature when the coolant temperature (CLT) exceeds 165F.
+
+The engine is considered at idle when RPMs are around 1000 and the throttle position (TPS) is less than 2%.
